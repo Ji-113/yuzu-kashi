@@ -1,0 +1,12 @@
+.sbox {
+border: 3px solid #CCCCCC;
+    padding: 10px 10px;
+}
+
+.sbox-inner {
+    display: flex;
+}
+
+.sbox-inner input#searchbox {
+    flex: auto;
+}
