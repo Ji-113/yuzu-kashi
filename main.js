@@ -13,14 +13,6 @@ document.getElementById('searchbutton').addEventListener('click', function() {
         var text = element.textContent.toLowerCase();
         var index = text.indexOf(input);
 
-text_form.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    const btn_search = document.getElementById("btn_search");
-    btn_search.dispatchEvent(new PointerEvent("click"));  // clickイベントを発生させて、送り込む
-    e.preventDefault();  // Enterキー入力を他に伝搬させないために
-  }  
-  return false;
-});
         
         if (index >= 0 && !found) {
             found = true;
