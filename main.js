@@ -15,7 +15,7 @@ document.getElementById('searchbutton').addEventListener('click', function() {
 
 text_form.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    const btn_search = document.getElementById("searchbutton");
+    const btn_search = document.getElementById("btn_search");
     btn_search.dispatchEvent(new PointerEvent("click"));  // clickイベントを発生させて、送り込む
     e.preventDefault();  // Enterキー入力を他に伝搬させないために
   }  
