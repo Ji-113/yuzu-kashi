@@ -13,7 +13,6 @@ document.getElementById('searchbutton').addEventListener('click', function() {
         var text = element.textContent.toLowerCase();
         var index = text.indexOf(input);
 
-        
         if (index >= 0 && !found) {
             found = true;
             element.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 要素を画面の中央にスクロールします
@@ -22,9 +21,6 @@ document.getElementById('searchbutton').addEventListener('click', function() {
         const regex = new RegExp(`(${input})`, 'gi');
         element.innerHTML = element.innerHTML.replace(regex, '<span style="background-color: #ffe46f;">$1</span>'); // ハイライトを適用します
     });
-});
-
-        
 });
 
 const searchbox = document.getElementById("searchbox");
