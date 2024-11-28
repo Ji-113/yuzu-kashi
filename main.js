@@ -26,7 +26,7 @@ document.getElementById('searchbutton').addEventListener('click', function() {
 
 const searchbox = document.getElementById("searchbox");
 
-text_form.addEventListener("keydown", (e) => {
+searchbox.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     const searchbutton = document.getElementById("searchbutton");
     searchbutton.dispatchEvent(new PointerEvent("click"));  // clickイベントを発生させて、送り込む
