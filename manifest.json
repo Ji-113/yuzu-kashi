@@ -7,9 +7,9 @@
   "start_url": "./index.html",
   "icons": [
     {
-      "src": "",
+      "src": "./zukanlive.jpg",
       "sizes": "192x192",
-      "type": ""
+      "type": "image/jpg"
     }
   ]
 }
