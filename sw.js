@@ -6,7 +6,7 @@ const urlsToCache = [
   './index.html',
   './sayonarabasu.html',
   './natsuiro.html',
-  './.html',
+  './amenochihareruya.html',
   './style.css',
   './zukanlive.jpg',
   './images/b.jpg',
