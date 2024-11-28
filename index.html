@@ -20,6 +20,15 @@
   <link rel="manifest" href="./manifest.json">
 </head>
 <body>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').then(registration => {
+      console.log('ServiceWorker registration successful.');
+    }).catch(err => {
+      console.log('ServiceWorker registration failed.');
+    });
+  }
+</script>
   <div class = "sbox"> 
     <div class = "sbox-inner"> 
     <input type="text" id="searchbox" placeholder="曲名を入力">
