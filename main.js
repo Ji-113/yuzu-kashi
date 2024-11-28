@@ -24,11 +24,11 @@ document.getElementById('searchbutton').addEventListener('click', function() {
     });
 });
 
-const text_form = document.getElementById("text_form");
+const searchbox = document.getElementById("searchbox");
 
 text_form.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    const btn_search = document.getElementById("searchbutton");
+    const searchbutton = document.getElementById("searchbutton");
     searchbutton.dispatchEvent(new PointerEvent("click"));  // clickイベントを発生させて、送り込む
     e.preventDefault();  // Enterキー入力を他に伝搬させないために
   }  
