@@ -23,3 +23,14 @@ document.getElementById('searchbutton').addEventListener('click', function() {
         element.innerHTML = element.innerHTML.replace(regex, '<span style="background-color: #ffe46f;">$1</span>'); // ハイライトを適用します
     });
 });
+
+const text_form = document.getElementById("text_form");
+
+text_form.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const btn_search = document.getElementById("searchbutton");
+    searchbutton.dispatchEvent(new PointerEvent("click"));  // clickイベントを発生させて、送り込む
+    e.preventDefault();  // Enterキー入力を他に伝搬させないために
+  }  
+  return false;
+});
