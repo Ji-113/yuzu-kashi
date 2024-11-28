@@ -19,9 +19,6 @@ document.getElementById('searchbutton').addEventListener('click', function() {
             element.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 要素を画面の中央にスクロールします
         }
 
-        const regex = new RegExp(`(${input})`, 'gi');
-        element.innerHTML = element.innerHTML.replace(regex, '<span style="background-color: #ffe46f;">$1</span>'); // ハイライトを適用します
-    });
 });
 
 const searchbox = document.getElementById("searchbox");
