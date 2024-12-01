@@ -18,6 +18,8 @@ border: 5px solid #FF0000;
 #searchbutton {
     color:#FFFFFF;
     background-color:#a30200;
+    border:none;
+    outline:none;
 }
 
 .pagetop {
