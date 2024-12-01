@@ -44,11 +44,5 @@ border: 3px solid #FF0000;
   transform: translateY(20%) rotate(-45deg);
 }
 
-.ichigyou img{
-    vertical-align: middle;
-    display: inline-block;
-}
-.ichigyou span{
-    display: inline-block;
-}
+
 
