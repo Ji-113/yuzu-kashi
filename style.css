@@ -15,6 +15,11 @@ border: 3px solid #FF0000;
     flex: auto;
 }
 
+#searchbutton {
+    color:#FFFFFF;
+    background-color:#a30200;
+}
+
 .pagetop {
   height: 50px;
   width: 50px;
